@@ -1,7 +1,7 @@
 import express from "express";
 
-import * as todoController from "../controllers/todoController";
-import { validateToken } from "../middleware/validateToken";
+import * as todoController from "../controllers/todoController.js";
+import { validateToken } from "../middleware/validateToken.js";
 
 const router = express.Router();
 

@@ -1,10 +1,10 @@
 import type { Request, Response } from "express";
 import { StatusCodes } from "http-status-codes";
 
-import * as todoService from "../services/todoService";
-import { createError, createResponse } from "../utils/responseUtils";
-import { TODO_VALIDATION_ERRORS } from "../utils/validator";
-import type { TodoInput } from "../types/todos";
+import * as todoService from "../services/todoService.js";
+import { createError, createResponse } from "../utils/responseUtils.js";
+import { TODO_VALIDATION_ERRORS } from "../utils/validator.js";
+import type { TodoInput } from "../types/todos.js";
 
 export const createTodo = async (req: Request, res: Response) => {
   const { title, content }: TodoInput = req.body;

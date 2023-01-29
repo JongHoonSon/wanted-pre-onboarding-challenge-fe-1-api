@@ -1,5 +1,5 @@
-import { createConnection } from "./models/db";
-import app from "./app";
+import { createConnection } from "./models/db.js";
+import app from "./app.js";
 
 createConnection();
 

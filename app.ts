@@ -6,8 +6,8 @@ import { StatusCodes } from "http-status-codes";
 
 import bodyParser from "body-parser";
 
-import todoRouter from "./routes/todoRouter";
-import userRouter from "./routes/userRouter";
+import todoRouter from "./routes/todoRouter.js";
+import userRouter from "./routes/userRouter.js";
 
 const app = express();
 
