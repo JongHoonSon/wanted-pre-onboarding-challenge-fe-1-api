@@ -17,8 +17,8 @@ app.use(bodyParser.json());
 
 app.use(cors());
 
-app.use("/todos", todoRouter);
-app.use("/users", userRouter);
+app.use("/api/todos", todoRouter);
+app.use("/api/users", userRouter);
 
 app.use((req, res, next) => {
   next(createError(404));
